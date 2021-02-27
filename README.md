@@ -20,7 +20,7 @@ You will conduct the crowdsale on the Kovan or Ropsten testnet in order to get a
 
 ### Creating your project
 
-Using Remix, create a file called `PupperCoin.sol` and create a standard `ERC20Mintable` token. Since you're already an expert at this, you can simply use this [starter code](../Starter_Code/PupperCoin.sol).
+Using Remix, create a file called `PupperCoin.sol` and create a standard `ERC20Mintable` token. Since you're already an expert at this, you can simply use this [starter code](../Starter-Code/Starter-Code_PupperCoin.sol).
 
 Create a new contract named `PupperCoinCrowdsale.sol`, and prepare it like a standard crowdsale.
 
@@ -32,11 +32,11 @@ You will need to simply use a standard `ERC20Mintable` and `ERC20Detailed` contr
 
 You don't need to hardcode the decimals, however since most use-cases match Ethereum's default, you may do so.
 
-Simply fill in the `PupperCoin.sol` file with this [starter code](../Starter_Code/PupperCoin.sol), which contains the complete contract you'll need to work with in the Crowdsale.
+Simply fill in the `PupperCoin.sol` file with this [starter code](../Starter-Code/Starter-Code_PupperCoin.sol), which contains the complete contract you'll need to work with in the Crowdsale.
 
 #### PupperCoinCrowdsale
 
-Leverage the [Crowdsale](../Starter_Code/Crowdsale.sol) starter code, saving the file in Remix as `Crowdsale.sol`.
+Leverage the [Crowdsale](../Starter-Code/Starter-Code_Crowdsale.sol) starter code, saving the file in Remix as `Crowdsale.sol`.
 
 You will need to bootstrap the contract by inheriting the following OpenZeppelin contracts:
 
@@ -62,7 +62,7 @@ When passing the `open` and `close` times, use `now` and `now + 24 weeks` to set
 
 #### PupperCoinCrowdsaleDeployer
 
-In this contract, you will model the deployment based off of the `ArcadeTokenCrowdsaleDeployer` you built previously. Leverage the [OpenZeppelin Crowdsale Documentation](https://docs.openzeppelin.com/contracts/2.x/crowdsales) for an example of a contract deploying another, as well as the starter code provided in [Crowdsale.sol](../Starter_Code/Crowdsale.sol).
+In this contract, you will model the deployment based off of the `ArcadeTokenCrowdsaleDeployer` you built previously. Leverage the [OpenZeppelin Crowdsale Documentation](https://docs.openzeppelin.com/contracts/2.x/crowdsales) for an example of a contract deploying another, as well as the starter code provided in [Crowdsale.sol](../Starter-Code/Starter-Code_Crowdsale.sol).
 
 ### Testing the Crowdsale
 
